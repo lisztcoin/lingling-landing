@@ -184,3 +184,24 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Privacy section */
+#privacy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#privacy h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#privacy ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#privacy li {
+    margin-bottom: 1rem;
+}

@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll("nav a");
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      targetElement.scrollIntoView({behavior: "smooth"});
+      const href = link.getAttribute("href");
+      if (href.startsWith("#")) {
+        e.preventDefault();
+        const targetId = href;
+        const targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({behavior: "smooth"});
+      }
     });
   });
 
